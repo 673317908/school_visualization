@@ -16,6 +16,7 @@
           <!-- 学校信息 -->
           <div class="resize">
             <Title title="学校信息" />
+            <SchoolInfo />
           </div>
         </div>
         <div id="left-top">
@@ -35,6 +36,7 @@
           <!-- 进口机器使用情况 -->
           <div class="resize">
             <Title title="进口机器使用情况" />
+            <InData />
           </div>
         </div>
       </section>
@@ -66,8 +68,11 @@
           <div class="resize"><Title title="本月考勤优秀班级" /></div>
         </div>
         <div id="right-bottom">
-          <!-- 出口机器使用情况 -->
-          <div class="resize"><Title title="出口机器使用情况" /></div>
+          <!-- 停车场机器使用情况 -->
+          <div class="resize">
+            <Title title="停车场机器使用情况" />
+            <ParkData />
+          </div>
         </div>
         <div id="right-bottom-video">
           <!-- 校园监控 -->
@@ -81,10 +86,13 @@
 <script>
 import Time from "../components/time/time";
 import Title from "../components/title/title";
-import PeopleNum from "../components/schoolPeopleNum/index";
-import PunchCard from "../components/punchCardData/index";
+import PeopleNum from "../components/schoolPeopleNum/schoolPeopleNum";
+import PunchCard from "../components/punchCardData/punchCardData";
+import InData from "../components/inData/inData";
+import ParkData from "../components/parkData/parkData";
+import SchoolInfo from "../components/schoolInfo/schoolInfo";
 export default {
-  components: { Time, Title, PeopleNum, PunchCard },
+  components: { Time, Title, PeopleNum, PunchCard, InData, ParkData, SchoolInfo },
   data() {
     return {};
   },
@@ -174,7 +182,7 @@ export default {
     height: 100%;
     width: 27.6%;
     #left-top-info {
-      height: 20%;
+      height: 22%;
       position: relative;
       background: rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
