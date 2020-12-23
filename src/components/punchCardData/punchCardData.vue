@@ -7,7 +7,10 @@
           <li class="grade">年级</li>
           <li class="time">时间</li>
         </ul>
-        <div class="line" style="width:92%;height:1px;background:white;margin-top:10px;"></div>
+        <div
+          class="line"
+          style="width: 92%; height: 1px; background: white; margin-top: 10px"
+        ></div>
         <div ref="con1" class="punch_card_data_list">
           <vue-seamless-scroll
             :data="punchData"
@@ -41,57 +44,57 @@ export default {
         {
           name: "张飞",
           class: "高三一5班",
-          time: "2020-12-18 17:30",
+          time: "2020-12-18 17:30"
         },
         {
           name: "关羽",
           class: "高三一4班",
-          time: "2020-12-18 17:30",
+          time: "2020-12-18 17:30"
         },
         {
           name: "刘备",
           class: "高三一2班",
-          time: "2020-12-18 17:30",
+          time: "2020-12-18 17:30"
         },
         {
           name: "诸葛亮",
           class: "高三一1班",
-          time: "2020-12-18 17:30",
+          time: "2020-12-18 17:30"
         },
         {
           name: "马超",
           class: "高三一3班",
-          time: "2020-12-18 17:30",
+          time: "2020-12-18 17:30"
         },
         {
           name: "赵云",
           class: "高三一5班",
-          time: "2020-12-18 17:30",
+          time: "2020-12-18 17:30"
         },
         {
           name: "黄忠",
           class: "高三一4班",
-          time: "2020-12-18 17:30",
+          time: "2020-12-18 17:30"
         },
         {
           name: "魏延",
           class: "高三一2班",
-          time: "2020-12-18 17:30",
+          time: "2020-12-18 17:30"
         },
         {
           name: "曹操",
           class: "高三一1班",
-          time: "2020-12-18 17:30",
+          time: "2020-12-18 17:30"
         },
         {
           name: "司马迁",
           class: "高三一3班",
-          time: "2020-12-18 17:30",
-        },
+          time: "2020-12-18 17:30"
+        }
       ],
       timeId: null,
       animate: false,
-      ws: null,
+      ws: null
     };
   },
   created() {},
@@ -108,11 +111,11 @@ export default {
         openWatch: true, // 开启数据实时监控刷新dom
         singleHeight: 0, // 单步运动停止的高度(默认值0是无缝不停止的滚动) direction => 0/1
         singleWidth: 0, // 单步运动停止的宽度(默认值0是无缝不停止的滚动) direction => 2/3
-        waitTime: 1000, // 单步运动停止的时间(默认值1000ms)
+        waitTime: 1000 // 单步运动停止的时间(默认值1000ms)
       };
-    },
+    }
   },
-  methods: {},
+  methods: {}
 };
 </script>
 

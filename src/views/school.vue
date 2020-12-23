@@ -76,7 +76,10 @@
         </div>
         <div id="right-bottom-video">
           <!-- 校园监控 -->
-          <div class="resize"><Title title="校园监控" /></div>
+          <div class="resize">
+            <Title title="校园监控" />
+            <!-- <Monitoring /> -->
+          </div>
         </div>
       </section>
     </div>
@@ -91,8 +94,18 @@ import PunchCard from "../components/punchCardData/punchCardData";
 import InData from "../components/inData/inData";
 import ParkData from "../components/parkData/parkData";
 import SchoolInfo from "../components/schoolInfo/schoolInfo";
+// import Monitoring from "../components/monitoring/monitoring";
 export default {
-  components: { Time, Title, PeopleNum, PunchCard, InData, ParkData, SchoolInfo },
+  components: {
+    Time,
+    Title,
+    PeopleNum,
+    PunchCard,
+    InData,
+    ParkData,
+    SchoolInfo,
+    // Monitoring
+  },
   data() {
     return {};
   },
@@ -194,13 +207,13 @@ export default {
       margin-bottom: 20px;
     }
     #left-center {
-      height: 26%;
+      height: 28%;
       position: relative;
       background: rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
     }
     #left-bottom {
-      height: 31%;
+      height: 34%;
       margin-top: 25px;
       position: relative;
       background: rgba(0, 0, 0, 0.1);
@@ -250,18 +263,18 @@ export default {
       margin-bottom: 20px;
     }
     #right-bottom {
-      height: 38%;
+      height: 40%;
       margin-top: 25px;
       position: relative;
       background: rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
     }
     #right-bottom-video {
-      height: 38%;
+      height: 37%;
       margin-top: 25px;
       position: relative;
       background: rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
+      margin-bottom: 120px;
     }
   }
 }

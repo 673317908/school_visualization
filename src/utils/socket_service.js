@@ -12,7 +12,7 @@ export default class SocketService {
     callBackMapping = {}
     connect() {
         if (!window.WebSocket) {
-            return console.log('浏览器不支持WebSocket')
+            return alert('浏览器不支持WebSocket')
         }
         this.ws = new WebSocket("ws://47.106.75.208:9502")
         this.ws.onopen = () => {

@@ -23,7 +23,7 @@
               <div class="item_grade">{{ item.title }}</div>
               <div class="item_site">{{ item.site }}</div>
               <div class="item_time">
-                  <p>{{ item.in_time }}</p>
+                <p>{{ item.in_time }}</p>
               </div>
             </div>
           </vue-seamless-scroll>
@@ -42,7 +42,7 @@ export default {
       inData: [],
       timeId: null,
       animate: false,
-      ws: null,
+      ws: null
     };
   },
   created() {
@@ -67,15 +67,16 @@ export default {
         openWatch: true, // 开启数据实时监控刷新dom
         singleHeight: 0, // 单步运动停止的高度(默认值0是无缝不停止的滚动) direction => 0/1
         singleWidth: 0, // 单步运动停止的宽度(默认值0是无缝不停止的滚动) direction => 2/3
-        waitTime: 1000, // 单步运动停止的时间(默认值1000ms)
+        waitTime: 1000 // 单步运动停止的时间(默认值1000ms)
       };
-    },
+    }
   },
   methods: {
     getData(res) {
       this.inData = res;
-    },
-  },
+      console.log(res);
+    }
+  }
 };
 </script>
 
