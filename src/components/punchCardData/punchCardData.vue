@@ -99,7 +99,7 @@ export default {
   },
   created() {},
   mounted() {
-    this.$socket.send({ value: "" });
+    // this.$socket.send({ value: "" });
   },
   computed: {
     classOption() {
