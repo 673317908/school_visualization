@@ -24,7 +24,7 @@ export default {
     getTime(timeStamp) {
       var date = new Date(timeStamp);
       var Y = date.getFullYear();
-      var M = date.getMonth() > 9 ? date.getMonth() + 1 : "0" + date.getMonth() + 1;
+      var M = date.getMonth() + 1 > 9 ? date.getMonth() + 1 : "0" + (date.getMonth() + 1);
       var D = date.getDate() > 9 ? date.getDate() : "0" + date.getDate();
       var H = date.getHours() > 9 ? date.getHours() : "0" + date.getHours();
       var m = date.getMinutes() > 9 ? date.getMinutes() : "0" + date.getMinutes();
