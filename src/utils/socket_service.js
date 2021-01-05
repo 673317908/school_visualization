@@ -14,7 +14,7 @@ export default class SocketService {
         if (!window.WebSocket) {
             return alert('浏览器不支持WebSocket')
         }
-        this.ws = new WebSocket("ws://47.106.75.208:9502")
+        this.ws = new WebSocket("ws://121.196.29.56:9502")
         this.ws.onopen = () => {
             console.log('连接服务端成功')
             this.connected = true
@@ -41,13 +41,15 @@ export default class SocketService {
     }
     send(data) {
         if (this.connected) {
-            this.sendRetryCount = 0
-            this.ws.send(JSON.stringify(data))
+            setTimeout(() => {
+                this.sendRetryCount = 0
+                this.ws.send(JSON.stringify(data))
+            }, 2000);
         } else {
             this.sendRetryCount++
             setTimeout(() => {
                 this.ws.send(JSON.stringify(data))
-            }, this.sendRetryCount * 500);
+            }, this.sendRetryCount * 500);  
         }
     }
 }
