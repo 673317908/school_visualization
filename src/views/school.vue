@@ -48,14 +48,10 @@
           </div>
         </div>
         <div id="middle-center">
-          <!-- 一周打卡情况 -->
+          <!-- 当天的出勤率 -->
           <div class="resize">
-            <Title title="一周打卡情况" />
+            <Title title="当天的出勤率" />
           </div>
-        </div>
-        <div id="middle-bottom">
-          <!-- 一年打卡情况 -->
-          <div class="resize"><Title title="一年打卡情况" /></div>
         </div>
       </section>
       <section class="screen-right">
@@ -234,17 +230,10 @@ export default {
     }
     #middle-center {
       width: 100%;
-      height: 30%;
+      height: 90%;
       position: relative;
       background: rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
-    }
-    #middle-bottom {
-      margin-top: 25px;
-      width: 100%;
-      height: 38%;
-      position: relative;
-      background: rgba(0, 0, 0, 0.1);
     }
   }
   .screen-right {
