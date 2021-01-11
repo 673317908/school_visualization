@@ -20,18 +20,19 @@
           </div>
         </div>
         <div id="left-top">
-          <!-- 当前班级出勤统计 -->
+          <!-- 校园监控 -->
           <div class="resize">
-            <Title title="当前班级出勤统计" />
+            <Title title="校园监控" />
+            <!-- <Monitoring /> -->
           </div>
         </div>
-        <div id="left-center">
-          <!-- 实时打卡数据 -->
+        <!-- <div id="left-center">
+          实时打卡数据
           <div class="resize">
             <Title title="实时打卡数据" />
             <PunchCard />
           </div>
-        </div>
+        </div> -->
         <div id="left-bottom">
           <!-- 进口机器使用情况 -->
           <div class="resize">
@@ -50,19 +51,19 @@
         <div id="middle-center">
           <!-- 当天的出勤率 -->
           <div class="resize">
-            <Title title="当天的出勤率" />
+            <Work />
           </div>
         </div>
       </section>
       <section class="screen-right">
         <div id="right-top">
-          <!-- 本周考勤优秀班级 -->
-          <div class="resize"><Title title="本周考勤优秀班级" /></div>
+          <!-- 车辆出入 -->
+          <div class="resize"><Title title="车辆出入" /></div>
         </div>
-        <div id="right-center">
-          <!-- 本月考勤优秀班级 -->
+        <!-- <div id="right-center">
+          本月考勤优秀班级
           <div class="resize"><Title title="本月考勤优秀班级" /></div>
-        </div>
+        </div> -->
         <div id="right-bottom">
           <!-- 停车场机器使用情况 -->
           <div class="resize">
@@ -71,10 +72,15 @@
           </div>
         </div>
         <div id="right-bottom-video">
-          <!-- 校园监控 -->
+          <!-- 校园监控
           <div class="resize">
             <Title title="校园监控" />
-            <!-- <Monitoring /> -->
+            <Monitoring />
+          </div> -->
+          <!-- 设备总数 -->
+          <div class="resize">
+            <Title title="设备总数" />
+            <equipmentNum />
           </div>
         </div>
       </section>
@@ -90,7 +96,9 @@ import PunchCard from "../components/punchCardData/punchCardData";
 import InData from "../components/inData/inData";
 import ParkData from "../components/parkData/parkData";
 import SchoolInfo from "../components/schoolInfo/schoolInfo";
+import Work from "../components/work/work";
 // import Monitoring from "../components/monitoring/monitoring";
+import equipmentNum from "../components/equipmentNum/equipment";
 export default {
   components: {
     Time,
@@ -100,6 +108,8 @@ export default {
     InData,
     ParkData,
     SchoolInfo,
+    Work,
+    equipmentNum
     // Monitoring
   },
   data() {

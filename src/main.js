@@ -4,11 +4,13 @@ import router from "./router";
 import store from "./store";
 import "./assets/css/index.css";
 import SocketService from "./utils/socket_service";
+
 SocketService.Instance.connect();
 
 Vue.config.productionTip = false;
 
 Vue.prototype.$socket = SocketService.Instance;
+Vue.prototype.$echarts = window.echarts
 new Vue({
   router,
   store,
